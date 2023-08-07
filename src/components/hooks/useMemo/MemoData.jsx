@@ -6,7 +6,7 @@ export const MemoData = () => {
     const [show, setShow] = useState(true);
 
     /**
-     * se usa para memorizar elementos en caso de que se renderice el componente
+     * se usa para memorizar variables en caso de que se renderice el componente
      */
     const calculate = (numbersList) => useMemo(() => {
         console.log('calculando');
