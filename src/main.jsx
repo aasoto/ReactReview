@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css';
-import { ConsumeAPIApp } from './components/hooks/API/ConsumeAPIApp';
+import { CounterComponent } from './components/hooks/counter/CounterComponent';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ConsumeAPIApp />
+    <CounterComponent />
   </React.StrictMode>,
 )
