@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css';
-import { ListApp } from './components/ListApp';
+import { UsersApp } from './components/hooks/useEffect/UsersApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ListApp />
+    <UsersApp />
   </React.StrictMode>,
 )
