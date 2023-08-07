@@ -7,6 +7,6 @@ import { FetchData } from './components/hooks/useFetch/FetchData';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FetchData />
+    <FormComponent />
   </React.StrictMode>,
 )

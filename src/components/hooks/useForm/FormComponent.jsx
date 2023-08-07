@@ -1,6 +1,9 @@
+import { useEffect, useRef } from "react";
 import { useForm } from "./customHook/useForm"
 
 export const FormComponent = () => {
+
+    const emailRef = useRef();
 
     const { username, email, password, onInputChange } = useForm({
         username: '',
@@ -13,6 +16,10 @@ export const FormComponent = () => {
         console.log(username, email, password);
     }
 
+    useEffect(() => {
+        emailRef.current.focus();
+    }, []);
+
     return (
         <form onSubmit={ onSubmit }>
             <input
@@ -24,6 +31,7 @@ export const FormComponent = () => {
                 onChange={onInputChange}
             />
             <input
+                ref={emailRef}
                 name="email"
                 type='text'
                 className='border border-gray-400 rounded-lg m-2 px-4 py-2 placeholder:italic'
